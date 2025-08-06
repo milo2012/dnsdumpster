@@ -8,8 +8,6 @@ Python client and command-line tool to query [DNSDumpster.com](https://dnsdumpst
 pip install .
 ```
 
-> This will install the `dnsdumpster` CLI script if your `setup.py` includes the proper `entry_points`.
-
 ---
 
 ## Usage
