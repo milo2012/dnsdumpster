@@ -4,21 +4,21 @@ Python client to query DNSDumpster.com for DNS records of a domain.
 
 ## Installation
 
-'''bash
+```bash
 pip install .
-'''
+```
 
 ## Usage
 
 ### From the command line:
 
-'''bash
+```bash
 dnsdumpster example.com
-'''
+```
 
 ### From Python:
 
-'''python
+```bash
 from dnsdumpster import DNSDumpsterClient
 
 client = DNSDumpsterClient()
@@ -47,13 +47,13 @@ if results:
 
 else:
     print("No results found or query failed.")
-'''
+```
 
 ---
 
 ### Quick extraction of subdomains and IPs:
 
-'''python
+```bash
 ips, subdomains = client.get_simple_list("example.com")
 print("Subdomains:")
 for sub in subdomains:
@@ -61,7 +61,7 @@ for sub in subdomains:
 print("IPs:")
 for ip in ips:
     print(f"  {ip}")
-'''
+```
 
 ---
 
