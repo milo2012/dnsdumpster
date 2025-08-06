@@ -193,3 +193,32 @@ class DNSDumpsterClient:
                 subdomains.append(hostname)
 
         return ips, subdomains
+
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Query DNSDumpster for DNS records")
+    parser.add_argument("domain", help="Domain to query")
+    args = parser.parse_args()
+
+    client = DNSDumpsterClient()
+    results = client.query_domain(args.domain)
+
+    if results:
+        print(f"A Records:")
+        for rec in results['a_records']:
+            print(f"  {rec['hostname']} - {rec['ip']}")
+
+        print(f"\nMX Records:")
+        for rec in results['mx_records']:
+            print(f"  {rec['mx_record']} - {rec['ip']}")
+
+        print(f"\nNS Records:")
+        for rec in results['ns_records']:
+            print(f"  {rec['ns_record']} - {rec['ip']}")
+
+        print(f"\nTXT Records:")
+        for txt in results['txt_records']:
+            print(f"  {txt}")
+    else:
+        print("No results found or failed to query DNSDumpster.")

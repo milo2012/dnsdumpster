@@ -13,7 +13,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'dnsdumpster=dnsdumpster.client:main',
+            'dnsdumpster = dnsdumpster.client:main',
         ],
     },
     classifiers=[
