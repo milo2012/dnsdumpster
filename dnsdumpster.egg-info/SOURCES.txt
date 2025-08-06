@@ -1,0 +1,8 @@
+README.md
+setup.py
+dnsdumpster.egg-info/PKG-INFO
+dnsdumpster.egg-info/SOURCES.txt
+dnsdumpster.egg-info/dependency_links.txt
+dnsdumpster.egg-info/entry_points.txt
+dnsdumpster.egg-info/requires.txt
+dnsdumpster.egg-info/top_level.txt

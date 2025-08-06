@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dnsdumpster
+Version: 0.1.0
+Summary: DNSDumpster API client for querying DNS records
+Home-page: https://github.com/milo2012/dnsdumpster
+Author: milo2012
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
